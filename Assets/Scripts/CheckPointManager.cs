@@ -19,6 +19,15 @@ public class CheckPointManager : MonoBehaviour
     public PlayerController player;
     public GameObject intro;
     public GameObject guide;
+    public AddHealth addHealth1;
+    public AddHealth addHealth2;
+    public AddHealth addHealth3;
+    public AddHealth addHealth4;
+    public GameObject healthPickup1;
+    public GameObject healthPickup2;
+    public GameObject healthPickup3;
+    public GameObject healthPickup4;
+
 
     public void Start(){
         if (PlayerPrefs.GetInt("isRewarded") == 1){
@@ -31,7 +40,23 @@ public class CheckPointManager : MonoBehaviour
 
             if (PlayerPrefs.HasKey("playerHealth"))
             {
-                player.health += PlayerPrefs.GetFloat("playerHealth");
+                player.health = PlayerPrefs.GetFloat("playerHealth");
+                if (addHealth1.healthPickupNumber == 1)
+                {
+                    healthPickup1.SetActive(false);
+                }
+                if (addHealth2.healthPickupNumber == 2)
+                {
+                    healthPickup2.SetActive(false);
+                }
+                if(addHealth3.healthPickupNumber == 3)
+                {
+                    healthPickup3.SetActive(false);
+                }
+                if(addHealth4.healthPickupNumber == 4)
+                {
+                    healthPickup4.SetActive(false);
+                }
             }
            
             player.grassSound.Pause();

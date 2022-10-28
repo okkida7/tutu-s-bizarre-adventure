@@ -6,6 +6,7 @@ public class AddHealth : MonoBehaviour
 {
     PlayerController player;
     public int healthAdding;
+    public int healthPickupNumber;
 
     bool isColliding;
 
@@ -15,7 +16,7 @@ public class AddHealth : MonoBehaviour
         if(other.tag=="Player"){
             player = other.GetComponent<PlayerController>();
             player.Health += healthAdding;
-            PlayerPrefs.SetFloat("playerHealth", healthAdding);
+            PlayerPrefs.SetFloat("playerHealth", player.Health);
             Destroy(gameObject);
         }
     }
