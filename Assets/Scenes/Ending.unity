@@ -226,7 +226,11 @@ MonoBehaviour:
     Alexis Jin
 
 
-    Coco Zhou
+    Martin Zhao
+
+
+    Coco
+    Zhou
 
 
 '
@@ -636,7 +640,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Game Chief Designer\n\nProject Manager\n\nProgrammer \n\nArt Designer/Director\n\nArt
     Contributer\n\n2D Animator\n\n2D Animation Colorist\n\nUI Designer\n\nUI Artists\n\n\nSound
-    Effect Designer\n\nBackground Music Designer\n\nOriginal Planner\n\nSpecial Thanks"
+    Effect Designer\n\nBackground Music Designer\n\nOriginal Planner\n\nGame Tester\n\nSpecial
+    Thanks"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
