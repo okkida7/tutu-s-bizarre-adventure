@@ -37,23 +37,23 @@ public class CheckPointManager : MonoBehaviour
             positionCheck.enemy2health = PlayerPrefs.GetInt("two");
             positionCheck.enemy3health = PlayerPrefs.GetInt("three");
             positionCheck.enemy4health = PlayerPrefs.GetInt("four");
-
+            
             if (PlayerPrefs.HasKey("playerHealth"))
             {
                 player.health = PlayerPrefs.GetFloat("playerHealth");
-                if (addHealth1.healthPickupNumber == 1)
+                if (PlayerPrefs.GetInt("healthPickupOne") == 1)
                 {
                     healthPickup1.SetActive(false);
                 }
-                if (addHealth2.healthPickupNumber == 2)
+                if (PlayerPrefs.GetInt("healthPickupTwo") == 2)
                 {
                     healthPickup2.SetActive(false);
                 }
-                if(addHealth3.healthPickupNumber == 3)
+                if(PlayerPrefs.GetInt("healthPickupThree") == 3)
                 {
                     healthPickup3.SetActive(false);
                 }
-                if(addHealth4.healthPickupNumber == 4)
+                if(PlayerPrefs.GetInt("healthPickupFour") == 4)
                 {
                     healthPickup4.SetActive(false);
                 }

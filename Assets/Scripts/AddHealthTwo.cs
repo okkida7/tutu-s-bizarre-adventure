@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AddHealth : MonoBehaviour
+public class AddHealthTwo : MonoBehaviour
 {
     PlayerController player;
     public int healthAdding;
@@ -10,12 +10,14 @@ public class AddHealth : MonoBehaviour
 
     bool isColliding;
 
-    public void OnTriggerEnter2D(Collider2D other){
+    public void OnTriggerEnter2D(Collider2D other)
+    {
         if (isColliding) return;
         isColliding = true;
-        if(other.tag=="Player"){
-            healthPickupNumber = 1;
-            PlayerPrefs.SetInt("healthPickupOne", healthPickupNumber);
+        if (other.tag == "Player")
+        {
+            healthPickupNumber = 2;
+            PlayerPrefs.SetInt("healthPickupTwo", healthPickupNumber);
             player = other.GetComponent<PlayerController>();
             player.Health += healthAdding;
             PlayerPrefs.SetFloat("playerHealth", player.Health);
