@@ -16,7 +16,7 @@ public class AddHealthThree : MonoBehaviour
         isColliding = true;
         if (other.tag == "Player")
         {
-            healthPickupNumber = 3;
+            healthPickupNumber = 10;
             PlayerPrefs.SetInt("healthPickupThree", healthPickupNumber);
             player = other.GetComponent<PlayerController>();
             player.Health += healthAdding;

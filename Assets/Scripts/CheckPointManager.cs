@@ -20,9 +20,9 @@ public class CheckPointManager : MonoBehaviour
     public GameObject intro;
     public GameObject guide;
     public AddHealth addHealth1;
-    public AddHealth addHealth2;
-    public AddHealth addHealth3;
-    public AddHealth addHealth4;
+    public AddHealthTwo addHealth2;
+    public AddHealthThree addHealth3;
+    public AddHealthFour addHealth4;
     public GameObject healthPickup1;
     public GameObject healthPickup2;
     public GameObject healthPickup3;
@@ -49,7 +49,7 @@ public class CheckPointManager : MonoBehaviour
                 {
                     healthPickup2.SetActive(false);
                 }
-                if(PlayerPrefs.GetInt("healthPickupThree") == 3)
+                if(PlayerPrefs.GetInt("healthPickupThree") == 10)
                 {
                     healthPickup3.SetActive(false);
                 }
